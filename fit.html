@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitpeo</title>
+    <script src="https://cdn.anychart.com/releases/8.10.0/js/anychart-core.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.10.0/js/anychart-pie.min.js"></script>
+    <script type="text/javascript" src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+    <link rel="stylesheet" href="fit.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<style>
+    
+</style>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <img   src="./dash1.png" alt=""  class="sidelogo">
+            <span>Dashboard</span>
+        </div>
+        <ul class="menu">
+            <li><a href="#"><i class="fa-regular fa-pen-to-square icon-style"></i><span>Dashboard</span><i class="fa-solid fa-angle-right i1" ></i></a></li>
+            <li><a href="#"><i class="fa-regular fa-circle-user icon-style"></i><span>Product</span><i class="fa-solid fa-angle-right i1"></i></a></li>
+            <li><a href="#"><i class="fa-regular fa-circle-user icon-style"></i><span>Customers</span><i class="fa-solid fa-angle-right i1 "></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-coins icon-style"></i><span>Income</span><i class="fa-solid fa-angle-right i1 "></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-percent icon-style"></i><span>Promote</span><i class="fa-solid fa-angle-right i1 "></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-circle-question "></i><span>Help</span><i class="fa-solid fa-angle-right i1"></i></a></li>
+             <div class="pn"> <div class="profile"><img src="./PROFILE.png" alt="" width="20%" height="20%">
+             </div><div class="name"> <p>Mounika</p>
+                <p>Project manager</p>
+            </div></div>
+       
+        </ul>
+        
+    </div>
+
+    <!-- main content starts here -->
+
+    <div class="main-content">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <h1>Hello Mounika</h1>
+           
+          <i class="fa-regular fa-hand "><strong>,</strong></i>
+        </div>
+        
+            <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="search">
+            </div>
+        
+        </div>
+
+        
+        <div class="card-container">
+            <div class="card-wrapper">
+               
+            <div class="cards">
+                <div class="card1">
+                    <div class="card">
+                    <div class="sub-card1">
+                        <i class="fa-solid fa-comment-dollar col"></i>
+                    </div>
+                    <div class="sub-card2">
+                        <p style="color:rgb(188, 184, 184);">Earning </p> 
+                        <p><strong>$198K</strong></p>
+                            <i class="fa-solid fa-arrow-up" style="color:green;"><span class="a" style="font-size: 12px;">37.8% this month</span></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="sub-card1">
+                        <i class="fa-solid fa-file-lines col " style="background-color:rgb(230, 204, 248); color:rgb(163, 100, 203); border-radius: 35px;"></i>
+                    </div>
+                    <div class="sub-card2">
+                        <p style="color:rgb(188, 184, 184);">Orders </p> 
+                        <p><strong>$2.4K</strong></p>
+                            <i class="fa-solid fa-arrow-down "style="color:red;"><span class="a" style="font-size: 12px; color: red;">2% this month</span></i>
+                    </div>
+                    </div>
+                    <div class="card">
+                    <div class="sub-card1">
+                        <i class="fa-solid fa-wallet col" style="background-color:rgb(180, 240, 246); color:blue;"></i>
+                    </div>
+                    <div class="sub-card2">
+                        <p style="color:rgb(188, 184, 184);">Balance </p> 
+                        <p><strong>$2.4K</strong></p>
+                            <i class="fa-solid fa-arrow-down" style="color:red;" ><span class="a" style="font-size: 12px; color: red;">2% this month</span></i>
+                    </div>
+                    </div>
+                    <div class="card">
+                    <div class="sub-card1">
+                        <i class="fa-solid fa-bag-shopping col" style="background-color:rgb(233, 164, 179); color:rgb(201, 25, 34);"></i>
+                    </div>
+                    <div class="sub-card2">
+                        <p style="color:rgb(188, 184, 184);">Total sales </p> 
+                        <p><strong>$89K</strong></p>
+                            <i class="fa-solid fa-arrow-up" style="color:green;"><span class="a" style="font-size: 12px; color: green;">11% this month</span></i>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="charts">
+            <div id="chartContainer"></div>
+<div id="container">
+</div>
+        </div>
+        
+
+        <!-- table content////////////////////////////// -->
+       
+        <div class="table-wrapper">
+            <div class="headwrap" style="margin-top: -20px;">
+               <div class="p" style="margin-left: -12px;">
+                    <h3 >Product Sell</h3>
+                </div>
+                    <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="search">
+                </div>
+                    <div class="d" style="display: flex; "><p>Last 30 Days</p><i class="fa-solid fa-angle-down"></i></div>
+                
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Stock</th>
+                            <th>Price</th>
+                            <th>Sales</th>
+                        </tr>
+                    <tbody>
+                        <tr>
+                            <td style="display: flex;"><img src="./abstract.webp" alt="" width="60px" height="40px" style=" border-radius: 8px;">
+                                <div style="margin: 8px;"><h4>Abstract 3D</h4> 
+                                    <p>This is an abstract and its details</p></div>
+                            </td>
+                            <td>32 in stock</td>
+                            <td>$45.99</td>
+                            <td>20</td>
+                        <tr>
+                            <td style="display: flex;"><img src="./abs.webp" alt="" width="60px" height="40px" style=" border-radius: 8px;">
+                                <div style="margin: 8px;"><h4>Sarphens illustration</h4> 
+                                    <p>This is an abstract and its details</p></div>
+                            </td>
+                            <td>32 in stock</td>
+                            <td>$45.99</td>
+                            <td>20</td>
+                            </tr>
+                        </tr>
+                    </tbody>
+                    </thead>
+                </table>
+            </div>
+        
+        </div>
+    </diiv>
+  
+    <script>
+
+        anychart.onDocumentReady(function () {
+          
+          // add data
+          var data = anychart.data.set([
+            ['data1', 20],
+            ['data2', 45],
+            ['data3', 45],
+           
+          ]);
+          
+          // create a pie chart with the data
+          var chart = anychart.pie(data);
+          
+          // set the chart radius making a donut chart
+          chart.innerRadius('55%')
+        
+          // create a color palette
+          var palette = anychart.palettes.distinctColors();
+         
+          // set the colors according to the brands
+          palette.items([
+            { color: '#ed1a48' },
+            { color: '#6d1087' },
+            { color: '#f3e4f7' },
+           
+          ]);
+        
+          // apply the donut chart color palette
+          chart.palette(palette);
+          
+          // set the position of labels
+          chart.labels().format('{%x} — {%y}%').fontSize(16);
+          
+          // disable the legend
+          chart.legend(false);
+
+          chart
+          .title()
+          .enabled(true)
+          .useHtml(true)
+          .text(
+            '<span style = "color: #111; font-size:20px;  margin-bottom:10px; dy:20px"><strong>Customers</strong></span>' +
+              '<br/><span style="color:e8e8e6; font-size: 15px;">Customers that buy products</span>'
+          );
+         
+          
+          // format the donut chart tooltip
+          chart.tooltip().format('Market share: {%PercentValue}%');
+        
+          // create a standalone label
+          var label = anychart.standalones.label();
+        
+          // configure the label settings
+          label
+            .useHtml(true)
+            .text(
+              '<span style = "color: #313136; font-size:20px; ">65%<br/>  </span>' +
+              '</br><span style="color:#444857; font-size: 14px;"><i>Total New <br/>Customers</i></span>'
+            )
+            .position('center')
+            .anchor('center')
+            .hAlign('center')
+            .vAlign('middle');
+          
+          // set the label as the center content
+          chart.center().content(label);
+          
+          // set container id for the chart
+          chart.container('container');
+          
+          // initiate chart drawing
+          chart.draw();
+        
+        });
+
+        //barchart
+
+        window.onload = function () {
+    var chart = new CanvasJS.Chart("chartContainer",
+    {
+      title:{
+        text: "Overview"
+        
+
+      },
+      dataPointMaxWidth:20,
+      
+      data: [
+
+      {
+        dataPoints: [
+        { x: 1, y:120000, label: "jan" ,color:'#e6c2f2'},
+        { x: 2, y: 97017,  label: "feb",color:'#e6c2f2' },
+        { x: 3, y: 155200,  label: "mar",color:'#e6c2f2'},
+        { x: 4, y: 134580,  label: "api",color:'#e6c2f2'},
+        { x: 5, y: 60000,  label: "may",color:'#e6c2f2'},
+        { x: 6, y: 132800, label: "june",color:'#e6c2f2'},
+        { x: 7, y: 150682,  label: "july",color:'#e6c2f2'},
+        { x: 8, y: 160350,  label: "aug", color:'#581070'},
+        { x: 9, y: 130350,  label: "sep",color:'#e6c2f2'},
+        { x: 10, y: 120350,  label: "oct",color:'#e6c2f2'},
+        { x: 11, y: 110350,  label: "nov",color:'#e6c2f2'},
+        { x: 12, y: 120350,  label: "dec",color:'#e6c2f2'}
+        ]
+      }
+      ]
+    });
+    
+    chart.render();
+    
+  }
+        
+            </script>
+
+</body>
+</html>
